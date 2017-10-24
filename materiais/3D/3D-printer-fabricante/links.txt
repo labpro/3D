@@ -1,0 +1,14 @@
+# Shield 3D-printer (RAMPS1.4A)
+
+    link: http://www.reprap.org/wiki/RAMPS_1.4
+
+# Motor de Passo (SM1.8-A1740CH-CS)
+
+    link: http://actiontechnology.com.br/produto/motor-de-passo-1-8-sm1-8-a1740ch-cs/
+
+# Stepper Drivers Polulu A4988
+
+    links: 
+        https://www.pololu.com/product/1182
+        http://howtomechatronics.com/tutorials/arduino/how-to-control-stepper-motor-with-a4988-driver-and-arduino/
+        https://www.pololu.com/category/120/stepper-motor-drivers

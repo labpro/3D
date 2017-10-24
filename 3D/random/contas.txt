@@ -1,0 +1,7 @@
+email: leaprototipagem@gmail.com
+senha: <padrão do PC>
+
+github: http://github.com/leapro
+senha: <padrão do PC>123
+
+ssh_key.pub password : <padrão do PC>
