@@ -576,13 +576,13 @@
 
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
-#define INVERT_Y_DIR true
+#define INVERT_Y_DIR false
 #define INVERT_Z_DIR false
 
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR true
+#define INVERT_E0_DIR false
 #define INVERT_E1_DIR false
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
@@ -606,11 +606,11 @@
 
 // Travel limits after homing (units are in mm)
 #define X_MIN_POS 0
-#define Y_MIN_POS -10
+#define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 198
-#define Y_MAX_POS 201
-#define Z_MAX_POS 196
+#define X_MAX_POS 160
+#define Y_MAX_POS 130
+#define Z_MAX_POS 190
 
 // Travel limits after homing (units are in mm)
 //#define X_MIN_POS 0
@@ -747,7 +747,7 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (50*60)
+#define HOMING_FEEDRATE_XY (60*60)
 #define HOMING_FEEDRATE_Z  (4*60)
 
 //
@@ -756,12 +756,12 @@
 //
 
 // default settings
-//  {80,80,400,527.667} 
-//  {500, 200, 10, 35}  
-//  {3000,1500,25,4000} 
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,3200,527.667} 
+//#define DEFAULT_MAX_FEEDRATE          {150, 150, 1.5, 50}    // (mm/sec)
+//#define DEFAULT_MAX_ACCELERATION      {1000,1000,5,500}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot. 
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,3200,527.667}  // default steps per unit for Ultimaker
-#define DEFAULT_MAX_FEEDRATE          {150, 150, 1.5, 50}    // (mm/sec)
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.27,80,3050,500}  // default steps per unit for Ultimaker
+#define DEFAULT_MAX_FEEDRATE          {150, 150, 1.5, 50}  // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,5,500}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration in mm/s^2 for printing moves
@@ -947,7 +947,7 @@
 //
 // :{'en':'English','an':'Aragonese','bg':'Bulgarian','ca':'Catalan','cn':'Chinese','cz':'Czech','de':'German','el':'Greek','el-gr':'Greek (Greece)','es':'Spanish','eu':'Basque-Euskera','fi':'Finnish','fr':'French','gl':'Galician','hr':'Croatian','it':'Italian','kana':'Japanese','kana_utf8':'Japanese (UTF8)','nl':'Dutch','pl':'Polish','pt':'Portuguese','pt-br':'Portuguese (Brazilian)','pt-br_utf8':'Portuguese (Brazilian UTF8)','pt_utf8':'Portuguese (UTF8)','ru':'Russian','test':'TEST'}
 //
-#define LCD_LANGUAGE pt-br
+#define LCD_LANGUAGE en
 
 //
 // LCD Character Set
@@ -1048,7 +1048,7 @@
 //  If CLOCKWISE normally moves DOWN this makes it go UP.
 //  If CLOCKWISE normally moves UP this makes it go DOWN.
 //
-#define REVERSE_MENU_DIRECTION
+//#define REVERSE_MENU_DIRECTION
 
 //
 // Individual Axis Homing
@@ -1063,7 +1063,7 @@
 // If you have a speaker that can produce tones, enable it here.
 // By default Marlin assumes you have a buzzer with a fixed frequency.
 //
-//#define SPEAKER
+#define SPEAKER
 
 //
 // The duration and frequency for the UI feedback sound.
