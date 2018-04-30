@@ -257,10 +257,10 @@
 // When temperature exceeds max temp, your heater will be switched off.
 // This feature exists to protect your hotend from overheating accidentally, but *NOT* from thermistor short/failure!
 // You should use MINTEMP for thermistor short/failure protection.
-#define HEATER_0_MAXTEMP 250
-#define HEATER_1_MAXTEMP 250
-#define HEATER_2_MAXTEMP 250
-#define HEATER_3_MAXTEMP 250
+#define HEATER_0_MAXTEMP 260
+#define HEATER_1_MAXTEMP 260
+#define HEATER_2_MAXTEMP 260
+#define HEATER_3_MAXTEMP 260
 #define BED_MAXTEMP 120
 
 //===========================================================================
@@ -608,9 +608,9 @@
 #define X_MIN_POS 0
 #define Y_MIN_POS 0
 #define Z_MIN_POS 0
-#define X_MAX_POS 160
+#define X_MAX_POS 170
 #define Y_MAX_POS 130
-#define Z_MAX_POS 190
+#define Z_MAX_POS 160
 
 // Travel limits after homing (units are in mm)
 //#define X_MIN_POS 0
@@ -756,11 +756,11 @@
 //
 
 // default settings
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,3200,527.667} 
+//#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,3000,527.667} 
 //#define DEFAULT_MAX_FEEDRATE          {150, 150, 1.5, 50}    // (mm/sec)
 //#define DEFAULT_MAX_ACCELERATION      {1000,1000,5,500}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot. 
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   {80.27,80,3050,500}  // default steps per unit for Ultimaker
+#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,3050,500}  // default steps per unit for Ultimaker
 #define DEFAULT_MAX_FEEDRATE          {150, 150, 1.5, 50}  // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {1000,1000,5,500}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 

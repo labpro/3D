@@ -1,6 +1,21 @@
+BAUDRATE = 9600 
+DEVICE   = /dev/ttyACM1
+PACKAGE  = arduino
+ARCH     = avr
+BOARD    = mega
+SKETCH   = Marlin.ino
 
-upload:
-	@arduino --upload Marlin.ino
+VERIFY = --board $(PACKAGE):$(ARCH):$(BOARD) \
+	     --port $(DEVICE)                    \
+		 --verify $(SKETCH)
 
-verify:
-	@arduino --verify Marlin.ino
+UPLOAD = --board $(PACKAGE):$(ARCH):$(BOARD) \
+		 --port $(DEVICE)                    \
+		 --upload $(SKETCH)
+
+
+upload: 
+	@arduino $(UPLOAD)
+
+verify: 
+	@arduino $(VERIFY)
