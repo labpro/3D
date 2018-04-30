@@ -1,0 +1,53 @@
+macro   aa   g1   x0    y0    f5000
+macro   bb   g1   x170  y0    f5000
+macro   cc   g1   x170  y130  f5000
+macro   dd   g1   x0    y130  f5000
+
+macro   a  g1   x42.5  y32.5 f5000
+macro   b  g1   x127.5 y32.5 f5000
+macro   c  g1   x127.5 y97.5 f5000
+macro   d  g1   x42.5  y97.5 f5000
+
+macro   m    g1   x85  y65        f5000
+macro   M    g1   x85  y65   z15  f5000
+macro   m1   g1   x85  y0         f5000
+macro   m2   g1   x170  y65       f5000
+macro   m3   g1   x85  y130       f5000
+macro   m4   g1   x0  y65         f5000
+
+macro x0 g1 x0 f5000
+macro y0 g1 y0 f5000
+macro z0 g1 z0 f5000
+
+macro x  move x 1 f5000
+macro x1 move x 1 f5000
+macro x2 move x 2 f5000
+macro x3 move x 3 f5000
+macro x4 move x 4 f5000
+macro x5 move x 5 f5000
+
+macro y  move y 1 f5000
+macro y1 move y 1 f5000
+macro y2 move y 2 f5000
+macro y3 move y 3 f5000
+macro y4 move y 4 f5000
+macro y5 move y 5 f5000
+
+macro z  move z 1 f5000
+macro z1 move z 1 f5000
+macro z2 move z 2 f5000
+macro z3 move z 3 f5000
+macro z4 move z 4 f5000
+macro z5 move z 5 f5000
+
+macro X move x 10 f5000
+macro Y move y 10 f5000
+macro Z move z 10 f5000
+
+macro where M114
+set port /dev/ttyACM0
+set last_file_path /home/i
+set recentfiles ["/home/i/IRPF2018Linux-x86_64v1.4.bin"]
+set last_window_maximized False
+set last_window_width 1022
+set last_window_height 562
