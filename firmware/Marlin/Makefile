@@ -1,5 +1,5 @@
 BAUDRATE = 9600 
-DEVICE   = /dev/ttyACM1
+DEVICE   = /dev/ttyACM0
 PACKAGE  = arduino
 ARCH     = avr
 BOARD    = mega
