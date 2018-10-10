@@ -1,0 +1,36 @@
+{ 'name' : 'SCAD',
+  'last' : '0',
+  'tl'   : [ 
+  { 'name' : 'Main',
+    'last' : '0',
+    'bl'   : [ 
+  
+      { 'name':'Main',
+      'path':'scad/main.scad'
+      },
+      { 'name':'Utils',
+      'path':'scad/utils.scad'
+      },
+      { 'name':'Terminal',
+      'type':'term',
+      },
+  
+    ]
+    
+  },
+  { 'name' : 'Modules',
+    'last' : '0',
+    'bl'   : [ 
+  
+      { 'name':'X-Cart',
+      'path':'scad/x-cart.scad'
+      },
+      { 'name':'Bed-Cart',
+      'path':'scad/bed-cart.scad'
+      },
+  
+    ]
+    
+  },
+]
+}

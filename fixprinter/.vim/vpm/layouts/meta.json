@@ -1,0 +1,36 @@
+{ 'name' : 'Meta',
+  'last' : '0',
+  'tl'   : [ 
+  { 'name' : 'Layouts',
+    'last' : '0',
+    'bl'   : [ 
+  
+      { 'name':'Main',
+      'path':'.vim/vpm/layouts/meta.json'
+      },
+      { 'name':'SCAD',
+      'path':'.vim/vpm/layouts/scad.json'
+      },
+      { 'name':'Terminal',
+      'type':'term',
+      },
+  
+    ]
+    
+  },
+  { 'name' : 'Others',
+    'last' : '0',
+    'bl'   : [ 
+  
+      { 'name':'README',
+      'path':'README.md'
+      },
+      { 'name':'Makefile',
+      'path':'Makefile'
+      },
+  
+    ]
+    
+  },
+]
+}
