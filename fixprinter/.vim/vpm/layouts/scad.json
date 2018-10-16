@@ -28,8 +28,8 @@
       { 'name':'Bed-Cart',
       'path':'scad/bed-cart.scad'
       },
-      { 'name':'LM8UU Holder',
-      'path':'scad/lm8uu-holder.scad'
+      { 'name':'Bearing Holder',
+      'path':'scad/bearing-holder.scad'
       },
   
     ]
