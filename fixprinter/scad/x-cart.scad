@@ -54,6 +54,27 @@ module xcart(){
     cylinder(r=screw_r,h=1,center=true);
 
     cylinder(r=screw_r,h=1,center=true);
+
+    mirror(I)
+    bearing_holes();
+
+    mirror(J)
+    bearing_holes();
+
+    mirror(I)
+    mirror(J)
+    bearing_holes();
+
+    bearing_holes();
+    module bearing_holes(){
+      tx(bear_size*I/4)
+      ty(box_size*J/2-5)
+      cylinder(r=screw_r,h=1,center=true);
+
+      tx(bear_size*I/4)
+      ty(box_size*J/2-15-bear_size*J)
+      cylinder(r=screw_r,h=1,center=true);
+    }
   
   }
 }

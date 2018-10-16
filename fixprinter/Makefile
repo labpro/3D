@@ -1,3 +1,3 @@
 
 all:
-	@openscad -o dxf/main.dxf scad/main.scad
+	@openscad -o stl/main.stl scad/main.scad

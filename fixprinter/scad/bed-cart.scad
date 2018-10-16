@@ -1,16 +1,16 @@
 module bedcart(){
-  paper_x = 217;
+  paper_x = 216;
   screw_dist = 209;
 
   shaft_dist = 170;
 
-  box_size = 215*(I+J)+K;
+  box_size = 216*(I+J)+K;
 
   bearing_size = 16*I+25*J+K;
 
   bearing_dist = 70;
   
-  translate((paper_x-box_size*I)*I/2+5*J+box_size/2-K)
+  translate((paper_x-box_size*I)*I/2+10*J+box_size/2-K)
   difference(){
     cube(box_size,center=true);
     union(){
