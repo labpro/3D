@@ -1,81 +1,48 @@
 
 module xcart(){
-  screw_dist = 48;
-  
-  bear_size = [50,16,1];
-  bear_dist = 47;
-  
-  box_size = [70,83,1];
-  gap = 30*(I+J);
 
-  difference(){
-    cube(box_size,center=true);
-    holes();
-  }
+  size = 64*I+81*J/2+7*K;
 
-  module holes(){
-  
-    translate(+J*bear_dist/2)
-    cube(bear_size,center=true);
-  
-    translate(-J*bear_dist/2)
-    cube(bear_size,center=true);
+  screw_hole_diameter = (115/100)*3*in/32 ;
+  screw_hole_diameter = (25/100)*3*in/32 ;
 
-    a = +I*screw_dist/2;
-    b = -I*screw_dist/2;
-    c = +I*30+36.5*J;
-    d = -I*30+36.5*J;
-    e = +I*30-36.5*J;
-    f = -I*30-36.5*J;
+  part();
+  mirror(J)
+  part();
+  module part(){
+    difference(){
+      cblock(size);
+      union(){
 
-    echo(a);
-    echo(b);
-    echo(c);
-    echo(d);
-    echo(e);
-    echo(f);
-  
-    translate(a)
-    cylinder(r=screw_r,h=1,center=true);
-  
-    translate(b)
-    cylinder(r=screw_r,h=1,center=true);
-
-    translate(c)
-    cylinder(r=screw_r,h=1,center=true);
-  
-    translate(d)
-    cylinder(r=screw_r,h=1,center=true);
-  
-    translate(e)
-    cylinder(r=screw_r,h=1,center=true);
-  
-    translate(f)
-    cylinder(r=screw_r,h=1,center=true);
-
-    cylinder(r=screw_r,h=1,center=true);
-
-    mirror(I)
-    bearing_holes();
-
-    mirror(J)
-    bearing_holes();
-
-    mirror(I)
-    mirror(J)
-    bearing_holes();
-
-    bearing_holes();
-    module bearing_holes(){
-      tx(bear_size*I/4)
-      ty(box_size*J/2-5)
-      cylinder(r=screw_r,h=1,center=true);
-
-      tx(bear_size*I/4)
-      ty(box_size*J/2-15-bear_size*J)
-      cylinder(r=screw_r,h=1,center=true);
+        hole();
+        mirror(I)
+        hole();
+      }
     }
-  
   }
+
+  module hole(){
+
+    A = 31*I/2 + 47*J/2;
+
+
+    translate(A+14*J)
+    cylinder(r=screw_hole_diameter/2,h=7,$fn=10);
+    translate(A-14*J)
+    cylinder(r=screw_hole_diameter/2,h=7,$fn=10);
+
+    r = 0.5;
+    translate(24*I)
+    cylinder(r=r,h=7,$fn=10);
+
+    translate(-24*I)
+    cylinder(r=r,h=7,$fn=10);
+
+  }
+
+
+
+
+
 }
 

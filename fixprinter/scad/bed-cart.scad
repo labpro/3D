@@ -140,3 +140,10 @@ module bedcart(){
   }
 
 }
+
+module bed_belt_idler(){
+  
+  height = 4+13*in/16+6;
+
+
+}
